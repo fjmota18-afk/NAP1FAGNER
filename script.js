@@ -1,0 +1,1 @@
+document.getElementById("cadastro").addEventListener("submit",e=>{e.preventDefault();let n=nome.value.trim(),m=email.value.trim();if(!n||!m){alert("Preencha todos os campos.");return;}alert("Cadastro realizado com sucesso!");window.location.href="https://github.com";});
