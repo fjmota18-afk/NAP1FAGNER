@@ -1,1 +1,17 @@
-document.getElementById("cadastro").addEventListener("submit",e=>{e.preventDefault();let n=nome.value.trim(),m=email.value.trim();if(!n||!m){alert("Preencha todos os campos.");return;}alert("Cadastro realizado com sucesso!");window.location.href="https://github.com";});
+document.getElementById("cadastro").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+let nome=document.getElementById("nome").value;
+let email=document.getElementById("email").value;
+
+if(nome==="" || email===""){
+alert("Preencha todos os campos.");
+return;
+}
+
+alert("Cadastro realizado com sucesso!");
+
+window.location.href="https://github.com";
+
+});
